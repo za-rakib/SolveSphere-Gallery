@@ -8,7 +8,7 @@ int main()
     // n=5;
     int * ptr;
     ptr = (int*) malloc(n*sizeof(int));
-    if(ptr==NULL) printf("Memory allocation faild!");
+    if(ptr==NULL) printf("Memory allocation faild!!");
     else
     {
         for(i=0; i<n; i++)
@@ -25,7 +25,7 @@ int main()
     scanf("%d",&m);
     // n=10;
     ptr =(int*)realloc(ptr,n*sizeof(int));
-    if(ptr==NULL) printf("Memory allocation faild!");
+    if(ptr==NULL) printf("Memory allocation faild!!");
     else
     {
         for(i=n; i<n+m; i++)
