@@ -4,12 +4,10 @@ using namespace std;
 
 int main()
 {
-    string program;
-    cin >> program;
-
+    string input;
+    cin >> input;
     bool outputProduced = false;
-
-    for (char c : program)
+    for (char c : input)
     {
         if (c == 'H' || c == 'Q' || c == '9')
         {
@@ -19,6 +17,7 @@ int main()
     }
 
     cout << (outputProduced ? "YES" : "NO") << endl;
+    //  cout << int(a) << endl;
 
     return 0;
-}
+};
