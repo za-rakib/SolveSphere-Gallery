@@ -7,6 +7,7 @@ int main()
 {
     int n, s, arr[5] = {0};
     cin >> n;
+
     while (n--)
     {
         cin >> s;
