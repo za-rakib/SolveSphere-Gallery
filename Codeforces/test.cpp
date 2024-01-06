@@ -1,55 +1,33 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
-    int arr[n + 1];
+    string s;
+    char u;
+    bool c = true;
+    cin >> s;
 
-    for (int i = 1; i <= n; i++)
+    for(int i = 1; i < s.length(); i++)
     {
-        cin >> arr[i];
-    }
-    // sort(arr + 1, arr + n + 1);
-    int max = *max_element(arr + 1, arr + n + 1);
-    int min = *min_element(arr + 1, arr + n + 1);
-    int maxIndex, minIndex;
-
-    for (int i = 1; i <= n; i++)
-    {
-        if (arr[i] == max)
+        if(islower(s[i]))
         {
-            maxIndex = i;
-        }
-        if (arr[i] == min)
-        {
-            minIndex = i;
+            c = false;
         }
     }
-    // for (int i = 1; i <= n; i++)
-    // {
-    //     cout << arr[i] << " " << endl;
-    // }
 
-    // Find the maximum element
-    // cout << "\nMax Element = " << max << " at index " << maxIndex << endl;
-
-    // cout << "\nMin Element = " << min << " at index " << minIndex << endl;
-    if(maxIndex==1 && minIndex==n){
-        cout<<0<<endl;
-    }
-    else if(max)
-    if (maxIndex > minIndex)
+    if(c == true)
     {
-        cout << (n - minIndex) + (maxIndex - 1) - 1 << endl;
+        for(int j = 0; j < s.length(); j++)
+        {
+            if(islower(s[j]))
+                u = toupper(s[j]);
+            else
+                u = tolower(s[j]);
+            cout << u;
+        }
     }
     else
-    {
-        cout << (n - minIndex) + (maxIndex - 1) << endl;
-    }
-
+        cout << s;
     return 0;
 }
-whats wrong

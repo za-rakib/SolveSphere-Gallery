@@ -1,4 +1,1 @@
-   // if (sum > 0)
-    // {
-    //     count++;
-    // }
+  cout << check << endl;
