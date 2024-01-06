@@ -23,15 +23,11 @@ int main()
   // cout << check << endl;
   if (check)
   {
-    s2 = s;
     for (int i = 0; i < s.length(); i++)
     {
-      if (isupper(s[i]))
-        s2[i] = tolower(s[i]);
-      else
-        s2[i] = toupper(s[i]);
+      s[i] = isupper(s[i]) ? tolower(s[i]) : toupper(s[i]);
     }
-    cout << s2 << endl;
+    cout << s << endl;
   }
   else
   {
