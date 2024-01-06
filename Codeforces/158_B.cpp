@@ -7,7 +7,6 @@ int main()
 {
     int n, s, arr[5] = {0};
     cin >> n;
-
     while (n--)
     {
         cin >> s;
@@ -21,7 +20,7 @@ int main()
         total += 1;
         arr[1] -= 2;
     }
-    if (arr[1] > 1)
+    if (arr[1] >= 1)
     {
         total += (arr[1] + 3) / 4;
     }
