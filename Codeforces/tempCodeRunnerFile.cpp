@@ -1,4 +1,4 @@
-   // if (sum > 0)
-    // {
-    //     count++;
-    // }
+ if (candies <= 2)
+        {
+            cout << 0 << endl;
+        }
