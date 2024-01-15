@@ -1,4 +1,1 @@
- if (candies <= 2)
-        {
-            cout << 0 << endl;
-        }
+  // cout << "len :" << len << endl;
