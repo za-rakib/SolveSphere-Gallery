@@ -1,23 +1,20 @@
-#include <iostream>
-using namespace std;
-int reverse(int x)
+class Solution
 {
-  int revNum = 0;
-  while (x != 0)
+public:
+  bool isPalindrome(int x)
   {
-    int digit = x % 10;
-    revNum = revNum * 10 + digit;
-    x /= 10;
+    if (x < 0)
+    {
+      return false;
+    }
+    long long temp = x;
+    long long rev = 0;
+    while (x != 0)
+    {
+      int digit = x % 10;
+      rev = rev * 10 + digit;
+      x /= 10;
+    }
+    return (temp == rev);
   }
-  return revNum;
-}
-int main()
-{
-  int number;
-  // cin >> number;
-  int check = 121 % 122;
-  // int len = number.len();
-  cout << check;
-
-  return 0;
 };
