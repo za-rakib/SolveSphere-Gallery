@@ -2,7 +2,6 @@
 #include <algorithm>
 #include <set>
 using namespace std;
-
 int main()
 {
     string str;
