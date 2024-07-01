@@ -1,61 +1,28 @@
 #include <iostream>
-<<<<<<< HEAD
-=======
-
->>>>>>> 9a9a2c0d2b125ed41f446a8a770ff37ae20ff8db
 using namespace std;
 
 int main()
 {
-<<<<<<< HEAD
-    string s;
-    char u;
-    bool c = true;
-    cin >> s;
-=======
-    int n, m;
-    cin >> n >> m;
->>>>>>> 9a9a2c0d2b125ed41f446a8a770ff37ae20ff8db
+    int n, k;
+    cin >> n >> k;
+    int available_time = 240 - k;
+    int total_time_spent = 0;
+    int total_solved = 0;
 
-    for(int i = 1; i < s.length(); i++)
+    for (int i = 1; i <= n; i++)
     {
-<<<<<<< HEAD
-        if(islower(s[i]))
+        int time_to_solve = 5 * i;
+        if (total_time_spent + time_to_solve <= available_time)
         {
-            c = false;
+            total_time_spent += time_to_solve;
+            total_solved++;
+        }
+        else
+        {
+            break;
         }
     }
 
-    if(c == true)
-    {
-        for(int j = 0; j < s.length(); j++)
-        {
-            if(islower(s[j]))
-                u = toupper(s[j]);
-            else
-                u = tolower(s[j]);
-            cout << u;
-        }
-    }
-    else
-        cout << s;
+    cout << total_solved;
     return 0;
 }
-=======
-        for (int j = 1; j <= m; j++)
-        {
-            if (i % 2 != 0 || (i % 4 == 0 && j == 1) || (i % 4 == 2 && j == m))
-            {
-                cout << "#";
-            }
-            else
-            {
-                cout << ".";
-            }
-        }
-        cout << endl;
-    }
-
-    return 0;
-}
->>>>>>> 9a9a2c0d2b125ed41f446a8a770ff37ae20ff8db
