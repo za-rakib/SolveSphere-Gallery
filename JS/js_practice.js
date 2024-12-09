@@ -44,3 +44,4 @@
 
 // console.log(+true);     Converts `true` to 1
 // console.log(!"sgdf");   Converts non-empty string to `true`, then negates it to `false`
+
