@@ -1,6 +1,6 @@
 
 function reverseString(str){
-    return str.split('').reverse().join();
+    return str.split("").reverse().join("");
 }
 let input = "dhaka";
 let output = reverseString(input)
