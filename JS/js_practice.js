@@ -45,3 +45,16 @@
 // console.log(+true);     Converts `true` to 1
 // console.log(!"sgdf");   Converts non-empty string to `true`, then negates it to `false`
 
+
+
+function fiboo(number){
+    const initailArray = [0,1];
+
+    for(let i=2;i<number;i++){
+        initailArray.push(initailArray[i-1]+initailArray[i-2])
+    }
+
+   return  initailArray.slice()
+}
+
+console.log(fiboo(10))
